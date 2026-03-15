@@ -256,7 +256,7 @@
         #page-transition {
             position:fixed; inset:0; background:#EEEBE5; z-index:99999;
             pointer-events:none; opacity:1;
-            transition:opacity 0.45s cubic-bezier(0.22,1,0.36,1);
+            transition:opacity 0.12s cubic-bezier(0.22,1,0.36,1);
         }
         #page-transition.gone { opacity:0; }
 
@@ -379,7 +379,7 @@
 
     function navigateTo(href) {
         document.getElementById('page-transition').classList.remove('gone');
-        setTimeout(() => { window.location.href = href; }, 460);
+        setTimeout(() => { window.location.href = href; }, 130);
     }
 
     const productData = {
